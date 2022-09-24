@@ -11,10 +11,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        
+        <Route path="/" element={<Links />} />
         <Route path="/form" element={<Form />} />
         <Route path="/counter" element={<Counter/>} />
-        <Route path="/" element={<Links />} />
       </Routes>
       
     </div>

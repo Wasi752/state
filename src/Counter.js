@@ -3,25 +3,25 @@ import { useState } from "react";
 function Counter (){
     const [counter, setCounter] = useState(0);
   return (
-    <div>
-      <p className='text-4xl'>{counter}</p>
+    <div className="w-full h-screen mt-40">
+      <p className='text-4xl mb-10'>{counter}</p>
       <button
         type='button'
-        className='w-[25%] h-[25%] border bg-yellow-500'
-        onClick={() => setCounter(counter + 10)}>
-        donate 10 taka
+        className='w-[25%] h-[25%] border bg-blue-500 text-3xl'
+        onClick={() => setCounter(counter + 100)}>
+        Donate 100 taka
       </button>
       <button
         type='button'
-        className='w-[25%] h-[25%] border bg-yellow-500'
-        onClick={() => setCounter(counter + 15)}>
-        donate 15 taka
+        className='w-[25%] h-[25%] border bg-green-500 text-3xl'
+        onClick={() => setCounter(counter + 500)}>
+        Donate 500 taka
       </button>
       <button
         type='button'
-        className='w-[25%] h-[25%] border bg-red-500'
-        onClick={() => setCounter(counter - 50)}>
-        spend 50 taka
+        className='w-[25%] h-[25%] border bg-yellow-400 text-3xl'
+        onClick={() => setCounter(counter - 100)}>
+        Spend 100 taka
       </button>
     </div>
   );
