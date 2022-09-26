@@ -1,10 +1,23 @@
+
 import { useState } from "react";
+import data from "./data";
 
 function Form(){
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setMobileNumber] = useState("");
     const [password, setPassword] = useState("");
+    const [users, setUsers] = useState(data);
+
+    const submit = ()=>{
+        const user = {
+            name: name, 
+            email: email, 
+            phone: phone, 
+            password: password
+        };
+        setUsers([...users, user]);
+    };
     return(
         <div className="w-full h-screen flex-col">
             <div className="w-full h-1/6"></div>
@@ -46,17 +59,15 @@ function Form(){
                     </div>
                     <div className="ml-12 pr-3 pl-8">
                         <button 
-                            type="button" 
+                            type="button"
+                            onClick={submit} 
                             className="text-center text-2xl text-white font-bold h-[90%] w-[55%] ml-14 bg-blue-600 hover:text-blue-300 p-4 border rounded-md m-3">Submit</button>
                     </div>
                 </div>
                 <div className="w-[25%] h-full"></div>
             </div>
-            <div className="w-full h-1/6"></div>
-            <p>{name}</p>
-            <p>{email}</p>
-            <p>{phone}</p>
-            <p>{password}</p>
+            
+            <p>{JSON.stringify(users)}</p>
         </div>
     );
 }
