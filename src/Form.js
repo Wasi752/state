@@ -23,7 +23,7 @@ function Form(){
             <div className="w-full h-1/6"></div>
             <div className="w-full h-[70%] flex">
                 <div className="w-[25%] h-full"></div>    
-                <div className="w-[50%] h-full bg-gray-100 p-5 divide-x-2 divide-x-2">        
+                <div className="w-[50%] h-[80%] bg-gray-100 p-5 divide-x-2 divide-x-2">        
                     <p className="mt-1 ml-5 text-left underline mr-10">Sign Up/Registration</p>
                     <div className="mt-1"><label className="ml-6 pr-2 ">User Name :</label>    
                         <input 
@@ -61,7 +61,7 @@ function Form(){
                         <button 
                             type="button"
                             onClick={submit} 
-                            className="text-center text-2xl text-white font-bold h-[80%] w-[60%] ml-14 bg-blue-600 hover:text-blue-300 p-3 border rounded-md m-3">Submit</button>
+                            className="text-center text-2xl text-white font-bold h-[80%] w-[56%] ml-14 bg-blue-600 hover:text-blue-300 p-3 border rounded-md m-3">Submit</button>
                     </div>
                 </div>
                 <div className="w-[25%] h-full"></div>

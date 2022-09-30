@@ -33,7 +33,12 @@ const submit=()=> {
 }
     return(
         <div>
-        <button type="button" onClick={submit} className="text-xl font-bold hover:text-blue-500">Submit</button>
+        <button 
+        type="button" 
+        onClick={submit} 
+        className="text-3xl pr-5 pl-5 font-bold mt-40 border border-green-500 pt-2 pb-2 hover:text-blue-500">
+            Submit
+            </button>
         <p>{JSON.stringify(users)}</p>
         </div>
     )

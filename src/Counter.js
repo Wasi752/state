@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Counter (){
-    const [counter, setCounter] = useState(0);
+    const [counter, setCounter] = useState(10);
   return (
     <div className="w-full h-screen mt-40">
       <p className='text-4xl mb-10'>{counter}</p>
