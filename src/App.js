@@ -6,6 +6,8 @@ import Form from './Form';
 import { Routes, Route, Link } from "react-router-dom";
 import Links from './Link';
 import Fetch from './Fetch';
+import Time from './Time';
+import Queue from './Queue';
 
 function App() {
   
@@ -16,6 +18,8 @@ function App() {
         <Route path="/form" element={<Form />} />
         <Route path="/counter" element={<Counter/>} />
         <Route path="/fetch" element={<Fetch/>} />
+        <Route path="/time" element={<Time/>} />
+        <Route path="/queue" element={<Queue/>} />
       </Routes>
       
     </div>
