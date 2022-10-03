@@ -8,6 +8,7 @@ import Links from './Link';
 import Fetch from './Fetch';
 import Time from './Time';
 import Queue from './Queue';
+import ColorChange from './ColorChange';
 
 function App() {
   
@@ -20,6 +21,8 @@ function App() {
         <Route path="/fetch" element={<Fetch/>} />
         <Route path="/time" element={<Time/>} />
         <Route path="/queue" element={<Queue/>} />
+        <Route path="/color" element={<ColorChange/>} />
+
       </Routes>
       
     </div>
