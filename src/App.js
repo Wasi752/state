@@ -10,6 +10,7 @@ import Time from './Time';
 import Queue from './Queue';
 import ColorChange from './ColorChange';
 import ChangeBulb from './ChangeBulb';
+import Effect from './Effect';
 
 function App() {
   
@@ -24,7 +25,7 @@ function App() {
         <Route path="/queue" element={<Queue/>} />
         <Route path="/color" element={<ColorChange/>} />
         <Route path="/bulb" element={<ChangeBulb/>} />
-
+        <Route path="/effect" element={<Effect/>} />
       </Routes>
       
     </div>

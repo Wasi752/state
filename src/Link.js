@@ -12,6 +12,7 @@ function Links() {
                 <Link to="/time" className={cName}>Current Date & Time</Link>
                 <Link to="/color" className={cName}>Change Color</Link>
                 <Link to="/bulb" className={cName}>Change Bulb</Link>
+                <Link to="/effect" className={cName}>Effect</Link>
             </div>
             <div className="w-[25%] h-full"></div>
         </div>
