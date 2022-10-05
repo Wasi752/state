@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Queue(){
-    const [serial, setSerial]= useState(1);
+    const [serial, setSerial]= useState(0);
     const [name, setName]= useState();
     const [people, setPeople] = useState(["Nayeem", "Mahmud", "Mesbah", "Amin", "Rokon"]);
     return(

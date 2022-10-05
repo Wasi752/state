@@ -9,6 +9,7 @@ import Fetch from './Fetch';
 import Time from './Time';
 import Queue from './Queue';
 import ColorChange from './ColorChange';
+import ChangeBulb from './ChangeBulb';
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
         <Route path="/time" element={<Time/>} />
         <Route path="/queue" element={<Queue/>} />
         <Route path="/color" element={<ColorChange/>} />
+        <Route path="/bulb" element={<ChangeBulb/>} />
 
       </Routes>
       
